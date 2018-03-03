@@ -1,8 +1,29 @@
-<html>
+<html lang="en">
+
 <head>
-<title>HW</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello!</title>
 </head>
+
 <body>
-We can put anything !!
+    <div class="template">
+        <h1>Party time!</h1>
+        <h3>{{hostname}}</h3>
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+            window.parent.postMessage({
+                    message_id: "template",
+                    template: {
+                        content: document.getElementById("template").innerHTML,
+                        framework: 'mustache'
+                    }
+                },"http://localhost:5500"
+            );
+        },true);
+    </script>
 </body>
+
 </html>
