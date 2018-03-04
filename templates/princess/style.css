@@ -1,0 +1,42 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css');
+@import url('https://fonts.googleapis.com/css?family=Satisfy|Roboto|Berkshire+Swash');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.1.0/font-awesome-animation.css');
+
+.photo{
+    border-radius: 5px;
+  }
+#mcontainer{
+    display: none;
+}
+#caption{
+    color: #F6F6F6;
+    font-family: 'Berkshire Swash';
+    font-size: 104px;
+    text-shadow: 2px 2px 10px #000;
+}
+#title{
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 74px;
+}
+#inviteNote, #inviteNote *{
+    color: #fff;
+    font-family: 'Roboto';
+}
+#sectionAddrText .card{
+    background-color: transparent;
+}
+
+#addrText .title, #timeFrom .title, #timeTo .title{
+    color: #fff;
+}
+#addrText .image, #timeFrom .image, #timeTo .image{
+    color: rgb(75, 26, 88);
+}
+.card-image{
+    padding:10px;
+}
+.box{
+    background: transparent;
+}

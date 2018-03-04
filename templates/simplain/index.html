@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -10,7 +11,8 @@
 </head>
 
 <body>
-    <div id="template" style="transition: opacity 2s; opacity: 0">
+    <div id="app" style="transition: opacity 2s; opacity: 0;display:none;">loading...</div>
+    <script id="template" type="text/template">
         <div class="container text-center">
             <div class="col-xs-12">
                 <div class="jumbotron">
@@ -43,7 +45,8 @@
                 {{/invite.photos.0}}
             </div>
         </div>
-    </div>
+    </script>
+    <script src="../iframeResizer.js"></script>
 </body>
 
 </html>
