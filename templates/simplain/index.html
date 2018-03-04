@@ -1,11 +1,49 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../childspy.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Simplain</title>
 </head>
+
 <body>
-    <h1>Simplain!</h1>
+    <div id="template" style="transition: opacity 2s; opacity: 0">
+        <div class="container text-center">
+            <div class="col-xs-12">
+                <div class="jumbotron">
+                    <h1 id="title" class="editable text-center">{{invite.title}}</h1>
+                </div>
+                <div class="small">An invite from: </div>
+                <h3 id="hostName" class="editable text-center">{{invite.hostName}}</h3>
+            </div>
+            <div class="col-xs-12 spacer">&nbsp;</div>
+            <div class="col-xs-12">
+                <p id="addrText" class="editable">{{invite.addrText}}</p>
+            </div>
+            <div class="col-xs-12 spacer">&nbsp;</div>
+            <div class="col-xs-12">
+                <span id="timeFrom" class="editable">{{invite.timeFromStr}}</span>
+                {{#invite.timeToStr}}
+                <span id="timeTo" class="editable"> to {{invite.timeToStr}}</span>
+                {{/invite.timeToStr}}
+            </div>
+            <div class="col-xs-12 spacer">&nbsp;</div>
+            <div class="col-xs-12">
+                <div id="inviteNote" class="editable">{{{invite.inviteNote}}}</div>
+            </div>
+            <div class="col-xs-12 spacer">&nbsp;</div>
+            <div class="col-xs-12">
+                {{#invite.photos.0}}
+                <div class="col-md-6 col-md-offset-3">
+                    <img class="img-fluid img-thumbnail" src="{{invite.photos.0.url}}"></img>
+                </div>
+                {{/invite.photos.0}}
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
