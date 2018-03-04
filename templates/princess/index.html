@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Princess</title>
     <script src="../childspy.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -86,15 +87,16 @@
                 </div>
             </section>
     </script>
-    <script src="../iframeResizer.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#app').fullpage({
-                sectionsColor: ['#F15A5A', '#F0C419', '#4EBA6F', '#2D95BF', '#955BA5']
-            });
+            setTimeout(() => {
+                $('#app').fullpage({
+                    sectionsColor: ['#F15A5A', '#F0C419', '#4EBA6F', '#2D95BF', '#955BA5']
+                });
+            }, 2000);
         });
     </script>
 </body>
