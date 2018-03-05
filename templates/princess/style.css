@@ -1,8 +1,3 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css');
-@import url('https://fonts.googleapis.com/css?family=Satisfy|Roboto|Berkshire+Swash');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.1.0/font-awesome-animation.css');
-
 .photo{
     border-radius: 5px;
   }
